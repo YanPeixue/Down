@@ -16,7 +16,7 @@ import Foundation
 
 public typealias ListPrefixGeneratorBuilder = (List) -> ListItemPrefixGenerator
 
-public class AttributedStringVisitor {
+open class AttributedStringVisitor: Visitor {
 
     // MARK: - Properties
 
@@ -41,10 +41,6 @@ public class AttributedStringVisitor {
         self.options = options
         self.listPrefixGeneratorBuilder = listPrefixGeneratorBuilder
     }
-
-}
-
-extension AttributedStringVisitor: Visitor {
 
     public typealias Result = NSMutableAttributedString
 
@@ -189,6 +185,7 @@ extension AttributedStringVisitor: Visitor {
         return result
     }
 }
+
 
 // MARK: - Helper extensions
 
