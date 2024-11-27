@@ -188,7 +188,7 @@ open class DownStyler: Styler {
 
     open func style(image str: NSMutableAttributedString, title: String?, url: String?) {
         guard let url = url else { return }
-       
+        // change
         if let imageURL = URL(string: url) {
             let attatchment = CustomTextAttachment(image: UIImage(), imageURL: imageURL)
             let imageAttr = NSAttributedString(attachment: attatchment)
