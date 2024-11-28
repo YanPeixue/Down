@@ -64,7 +64,7 @@ extension DownAttributedStringRenderable {
 
     public func toAttributedString(_ options: DownOptions = .default, styler: Styler) throws -> NSAttributedString {
         let document = try self.toDocument(options)
-        let visitor = AttributedStringVisitor(styler: styler, options: options)
+        let visitor = MyContentVisitor(styler: styler, options: options)
         return document.accept(visitor)
     }
 

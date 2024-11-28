@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -65,6 +65,9 @@
 		8AFAEB091E6E331700E09B68 /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D438696B1D00D27700E95A1F /* StringTests.swift */; };
 		907C64651EC133780095FEE1 /* TestDownView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 907C64621EC120530095FEE1 /* TestDownView.bundle */; };
 		90A40A9C1EC03292004F2E91 /* Down.framework in Copy Bundled Frameworks */ = {isa = PBXBuildFile; fileRef = 8A569F401E6B3E50008BE2AC /* Down.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9AACBB642CF8123E000E1AA7 /* MyContentVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AACBB622CF8123E000E1AA7 /* MyContentVisitor.swift */; };
+		9AACBB652CF8123E000E1AA7 /* CustomTextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AACBB612CF8123E000E1AA7 /* CustomTextAttachment.swift */; };
+		9AACBB662CF8123E000E1AA7 /* MyGreetingVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AACBB632CF8123E000E1AA7 /* MyGreetingVisitor.swift */; };
 		EE0E54F82300800E0070C83F /* BlockBackgroundColorAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0E54F72300800E0070C83F /* BlockBackgroundColorAttribute.swift */; };
 		EE3E7E38260400E800170A52 /* DownDebugLayoutManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2DF822FC9E89009EC13E /* DownDebugLayoutManagerTests.swift */; };
 		EE3E7E3F260400EE00170A52 /* LinkStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2DF522FC99A6009EC13E /* LinkStyleTests.swift */; };
@@ -210,6 +213,9 @@
 		90A40A981EC0309A004F2E91 /* Deployment-Targets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Deployment-Targets.xcconfig"; sourceTree = "<group>"; };
 		90A40A991EC0309A004F2E91 /* Universal-Framework-Target.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Universal-Framework-Target.xcconfig"; sourceTree = "<group>"; };
 		90A40A9A1EC0309A004F2E91 /* Universal-Target-Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Universal-Target-Base.xcconfig"; sourceTree = "<group>"; };
+		9AACBB612CF8123E000E1AA7 /* CustomTextAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextAttachment.swift; sourceTree = "<group>"; };
+		9AACBB622CF8123E000E1AA7 /* MyContentVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyContentVisitor.swift; sourceTree = "<group>"; };
+		9AACBB632CF8123E000E1AA7 /* MyGreetingVisitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGreetingVisitor.swift; sourceTree = "<group>"; };
 		D41689B21CFFE28200E5802B /* DownViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownViewTests.swift; sourceTree = "<group>"; };
 		D41689B51CFFE6BB00E5802B /* DownView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DownView.bundle; sourceTree = "<group>"; };
 		D4201EC51CFA59A5008EEC6E /* BindingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindingTests.swift; sourceTree = "<group>"; };
@@ -710,6 +716,9 @@
 		EEEBEE6E225D2B8200AE438D /* Visitors */ = {
 			isa = PBXGroup;
 			children = (
+				9AACBB612CF8123E000E1AA7 /* CustomTextAttachment.swift */,
+				9AACBB622CF8123E000E1AA7 /* MyContentVisitor.swift */,
+				9AACBB632CF8123E000E1AA7 /* MyGreetingVisitor.swift */,
 				EEEBEE71225D2F9200AE438D /* AttributedStringVisitor.swift */,
 				EE8F38CD22BFEDE50056270E /* ListItemPrefixGenerator.swift */,
 				EEEBEE6F225D2B9D00AE438D /* DebugVisitor.swift */,
@@ -975,6 +984,9 @@
 				EE5F2BA42262564A00B7C0F3 /* Styler.swift in Sources */,
 				EEA5C02922F58A0900B91D60 /* DownTextView.swift in Sources */,
 				8A569F731E6B3EDE008BE2AC /* DownLaTeXRenderable.swift in Sources */,
+				9AACBB642CF8123E000E1AA7 /* MyContentVisitor.swift in Sources */,
+				9AACBB652CF8123E000E1AA7 /* CustomTextAttachment.swift in Sources */,
+				9AACBB662CF8123E000E1AA7 /* MyGreetingVisitor.swift in Sources */,
 				8A569F781E6B3EE7008BE2AC /* DownErrors.swift in Sources */,
 				8A569F5C1E6B3ED9008BE2AC /* inlines.c in Sources */,
 				EE48C7DB22EC946F004815ED /* ColorCollection.swift in Sources */,
