@@ -43,7 +43,6 @@ class MyContentVisitor: MyGreetingVisitor {
     
     override func visit(image node: Image) -> NSMutableAttributedString {
         let result = super.visit(image: node)
-        result.append(NSAttributedString(string: "\n"))
         return result
     }
     
