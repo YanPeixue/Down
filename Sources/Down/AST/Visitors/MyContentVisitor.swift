@@ -25,6 +25,12 @@ class MyContentVisitor: MyGreetingVisitor {
         return result
     }
     
+    override func visit(code node: Code) -> NSMutableAttributedString {
+        let result = super.visit(code: node)
+        result.append(NSAttributedString(string: "\n"))
+        return result
+    }
+    
     override func visit(blockQuote node: BlockQuote) -> NSMutableAttributedString {
         let result = super.visit(blockQuote: node)
         return result
