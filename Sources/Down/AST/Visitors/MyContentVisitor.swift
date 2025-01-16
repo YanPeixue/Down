@@ -9,7 +9,11 @@ class MyContentVisitor: MyGreetingVisitor {
     
     override func visit(strong node: Strong) -> NSMutableAttributedString {
         let result = super.visit(strong: node)
-//        result.append(NSAttributedString(string: "\n"))
+        if let font: UIFont = .init(name: "KanunAR+LT-Bold", size: 14) {
+            result.addAttributes([.font: font], range: NSRange(location: 0, length: result.length))
+        } else {
+            result.addAttributes([.font: UIFont.boldSystemFont(ofSize: 14)], range: NSRange(location: 0, length: result.length))
+        }
         return result
     }
     
